@@ -94,10 +94,9 @@ body {
   color: var(--color-white-semi2);
   margin-top: 0.5rem;
 }
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1200px) {
   body {
-    padding: 90px 20px;
+    padding: 90px 40px;
   }
   .card {
     flex-direction: column;
@@ -113,6 +112,7 @@ body {
       url('./images/image-header-mobile.jpg') no-repeat center;
     width: 100%;
     height: 300px;
+    background-size: cover;
   }
   .card__content {
     padding: 30px;
@@ -131,17 +131,28 @@ body {
   }
 
   .card__stats {
-    flex-direction: column;
     margin-top: 2.5rem;
+    justify-content: center;
+    width: 100%;
   }
 
   .card__stat {
     align-items: center;
     flex-direction: column;
-    margin: 1.4rem 0;
+    margin: 1.4rem;
   }
 
   .stat__subheading {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card__stats {
+    flex-direction: column;
+  }
+
+  .card__stat {
+    margin: 1.4rem 0;
   }
 }
