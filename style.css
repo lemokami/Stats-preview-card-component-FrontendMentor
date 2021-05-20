@@ -38,7 +38,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: row-reverse;
-  width: 60%;
+  width: 80%;
 }
 
 .card__header-img {
